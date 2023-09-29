@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let math = +prompt("Nhập điểm môn Toán");
+        let physics = +prompt('Nhập điểm môn Lý');
+        let chemistry = +prompt('Nhập điểm môn Hóa')
+        let medium = (math + physics + chemistry) / 3;
+        console.log(medium);
+        switch (true){
+        // medium >= 8 && medium <= 10
+        // || medium >= 6.5 && medium <= 7.9
+        // || medium >= 5.0 && medium <= 6.4
+        // ||medium<5) {
+            case medium >= 8 && medium <= 10:
+                alert("Bạn làm rất tốt : Giỏi")
+                break;
+            case medium >= 6.5 && medium <= 7.9:
+                alert('Bạn làm tốt lắm, hãy cố gắng lên : Khá ')
+                break;
+            case medium >= 5.0 && medium <= 6.4:
+                alert(' hãy cố gắng hơn nữa nhé : trung bình')
+                break;
+                case medium<5 :
+                    alert("bạn học quá yếu")
+                    break;
+            default:
+                alert('Mời bạn nhập lại')
+                break;
+        }
+    </script>
+</body>
+
+</html>

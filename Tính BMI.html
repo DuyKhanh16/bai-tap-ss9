@@ -12,7 +12,9 @@
         let weight = +prompt("Nhập cân nặng");
         let height = +prompt("Nhập chiều cao");
         let bmi = weight / (height**2);
-        switch ( bmi < 18.5 || bmi > 18.5 && bmi < 24.9 || bmi == 25||bmi < 29.9 && bmi > 25||bmi > 30 && bmi < 34.9||bmi > 35 && bmi < 39.9||bmi >= 40) {
+        // switch ( bmi < 18.5 || bmi > 18.5 && bmi < 24.9 || bmi == 25||bmi < 29.9 && bmi > 25||bmi > 30 && bmi < 34.9||bmi > 35 && bmi < 39.9||bmi >= 40) {
+            switch (true) {
+                
             case bmi < 18.5:
                 alert("Bạn gầy quá!")
                 break;
@@ -32,7 +34,7 @@
                 alert("béo phì rồi")
                 break;
             case bmi >= 40:
-                alert("béo vậy chết đi sống làm mẹ gì nữa")
+                alert("Béo vậy chết đi sống làm mẹ gì nữa")
                 break;
         }
     </script>
