@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nhapTuoi=+prompt("Nhập tuổi của bạn")
+        // switch (nhapTuoi) {
+        //     case nhapTuoi>18:
+        //         console.log("Bạn Trên 18 tuổi rồi!");
+        //         break;
+        //     default:console.log("Bạn còn nhỏ quá!");
+        //         break;
+        // }
+        if (nhapTuoi>=18) {
+            console.log("Bạn đã trưởng thành rồi");
+        } else {
+            console.log("Bạn còn nhỏ quá!");
+        }
+        let thoiGian=+prompt("nhập giờ")
+        if (thoiGian<=18) {
+            alert("Good Day")
+        } else if (thoiGian>18&&thoiGian<24) {
+            alert("Good Evening")
+        } else {
+            alert("nhập sai thời gian")
+            
+        }
+        let nhapSo=+prompt("Nhập số")
+        if (nhapSo%2==0) {
+            document.write("số chẵn")
+        } else {
+            document.write("Số lẻ")
+        }
+    </script>
+
+</body>
+</html>

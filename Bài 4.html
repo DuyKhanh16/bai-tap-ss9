@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=+prompt("Nhập a")
+        let b=+prompt("Nhập b")
+        let c=+prompt("Nhập c")
+       if (a>b&&b>c) {
+        console.log(`Max Là ${a}\n, Min là ${c}`);
+       } else if (a>b&&b<c&&a>c) {
+        console.log(`Max Là ${a}\n, Min là ${b}`);
+       } else if (a>b&&b<c&&a<c) {
+        console.log(`Max Là ${c}\n, Min là ${b}`);
+       }else if(a<b&&b>c&&a<c) {
+        console.log(`Max Là ${b}\n, Min là ${a}`);
+       }else if(a<b&&b<c) {
+        console.log(`Max Là ${c}\n, Min là ${a}`);
+       }
+        
+       
+       
+    </script>
+</body>
+</html>

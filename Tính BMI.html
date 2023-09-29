@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let weight = +prompt("Nhập cân nặng");
+        let height = +prompt("Nhập chiều cao");
+        let bmi = weight / (height**2);
+        switch (bmi) {
+            case "bmi < 18.5":
+                alert("Bạn gầy quá!")
+                break;
+            case bmi > 18.5 && bmi < 24.9:
+                alert("Thân hình cân đối")
+                break;
+            case bmi >= 25:
+                alert("thừa cân rồi")
+                break;
+            case bmi < 29.9 && bmi > 25:
+                alert("Hơi béo rồi")
+                break;
+            case bmi > 30 && bmi < 34.9:
+                alert("Giảm cân thôi")
+                break;
+            case bmi > 35 && bmi < 39.9:
+                alert("béo phì rồi")
+                break;
+            case bmi >= 40:
+                alert("béo vậy chết đi sống làm mẹ gì nữa")
+                break;
+        }
+    </script>
+</body>
+
+</html>
